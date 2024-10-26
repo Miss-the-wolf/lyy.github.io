@@ -45,7 +45,7 @@
   />
 
   
-  <title>My First Post - My New Hugo Site</title>
+  <title> - My New Hugo Site</title>
 
   
   <meta name="theme-color" />
@@ -54,12 +54,15 @@
   
   
   
-  <meta name="description" content="
-title: &ldquo;My First Post&rdquo;
-date: 2024-10-26T10:00:00&#43;08:00
-draft: true
-Hello, World!
-This is my first post using Hugo." />
+  <meta name="description" content="---
+layout: post
+title: &#34;My First Post&#34;
+date: 2024-10-26
+categories: [category1, category2]  # 可选
+tags: [tag1, tag2]                  # 可选
+---
+这里是文章的内容，可以使用 Markdown 语法进行格式化。
+" />
   <meta name="author" content="My New Hugo Site" />
   
 
@@ -120,27 +123,23 @@ This is my first post using Hugo." />
   
   
   
-  <meta itemprop="name" content="My First Post">
-  <meta itemprop="description" content="title: “My First Post” date: 2024-10-26T10:00:00&#43;08:00 draft: true Hello, World! This is my first post using Hugo.">
-  <meta itemprop="datePublished" content="2024-10-26T17:53:21+08:00">
-  <meta itemprop="dateModified" content="2024-10-26T17:53:21+08:00">
-  <meta itemprop="wordCount" content="17">
+  <meta itemprop="name" content="My New Hugo Site">
+  <meta itemprop="description" content="--- layout: post title: &#34;My First Post&#34; date: 2024-10-26 categories: [category1, category2] # 可选 tags: [tag1, tag2] # 可选 --- 这里是文章的内容，可以使用 Markdown 语法进行格式化。">
+  <meta itemprop="wordCount" content="23">
   
   <meta property="og:url" content="https://example.org/posts/my-first-post/">
   <meta property="og:site_name" content="My New Hugo Site">
-  <meta property="og:title" content="My First Post">
-  <meta property="og:description" content="title: “My First Post” date: 2024-10-26T10:00:00&#43;08:00 draft: true Hello, World! This is my first post using Hugo.">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="--- layout: post title: &#34;My First Post&#34; date: 2024-10-26 categories: [category1, category2] # 可选 tags: [tag1, tag2] # 可选 --- 这里是文章的内容，可以使用 Markdown 语法进行格式化。">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-10-26T17:53:21+08:00">
-    <meta property="article:modified_time" content="2024-10-26T17:53:21+08:00">
 
   
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="My First Post">
-  <meta name="twitter:description" content="title: “My First Post” date: 2024-10-26T10:00:00&#43;08:00 draft: true Hello, World! This is my first post using Hugo.">
+  <meta name="twitter:title" content="My New Hugo Site">
+  <meta name="twitter:description" content="--- layout: post title: &#34;My First Post&#34; date: 2024-10-26 categories: [category1, category2] # 可选 tags: [tag1, tag2] # 可选 --- 这里是文章的内容，可以使用 Markdown 语法进行格式化。">
 
   
   
@@ -233,12 +232,10 @@ This is my first post using Hugo." />
 
 <article>
   <header class="mb-14">
-    <h1 class="!my-0 pb-2.5">My First Post</h1>
+    <h1 class="!my-0 pb-2.5"></h1>
 
     
     <div class="text-xs antialiased opacity-60">
-      
-      <time>Oct 26, 2024</time>
       
       
       
@@ -247,13 +244,15 @@ This is my first post using Hugo." />
     
   </header>
 
-  <section><hr>
-<h2 id="draft-true">title: &ldquo;My First Post&rdquo;
-date: 2024-10-26T10:00:00+08:00
-draft: true</h2>
-<h1 id="hello-world">Hello, World!</h1>
-<p>This is my first post using Hugo.</p>
-</section>
+  <section><pre tabindex="0"><code>---
+layout: post
+title: &#34;My First Post&#34;
+date: 2024-10-26
+categories: [category1, category2]  # 可选
+tags: [tag1, tag2]                  # 可选
+---
+这里是文章的内容，可以使用 Markdown 语法进行格式化。
+</code></pre></section>
 
   
   
@@ -266,10 +265,10 @@ draft: true</h2>
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
   >
     
-    
-    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="https://example.org/posts/my-01-post/"
-      ><span>My 01 Post</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    <a class="ltr:pr-3 rtl:pl-3" href="https://example.org/posts/my-02-post/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>My 02 Post</span></a
     >
+    
     
   </nav>
   
